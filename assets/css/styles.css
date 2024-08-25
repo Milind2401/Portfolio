@@ -297,7 +297,7 @@ html{
 } */
 .tab_description{
     display: flex;
-    font-weight: 500;
+    font-weight: 700;
     font-family: var(--secondary-color);
 }
 .tab_detail{
@@ -384,7 +384,8 @@ color: var(--primary-color);
 .portfolio_item{
     position: relative;
     cursor: pointer;
-    max-width: 30%;
+    width: 30%;
+    height: 500px;
     border-radius: var(--radius);
     overflow: hidden;
 }
@@ -621,4 +622,18 @@ background-color: var(--title-color);
 }
 .scroll-header .nav{
     height: var(--header-height);
+}
+
+.skillContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
+    gap: 10px;
+}
+.skillItem{
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+}
+.skillItem img{
+    width: 20px;
 }
